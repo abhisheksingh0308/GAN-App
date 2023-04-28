@@ -140,20 +140,15 @@ def demo_gan():
 
     algo = trainer(output_dir, dataloader, dataset.n_words, dataset.ixtoword)
 
-    st.title("Text To Image Synthesis using AttnGAN")
+    st.title("Image Synthesis using GAN")
 
-    st.markdown("---")
-    st.markdown("Creator: [Atharva Ingle](https://github.com/Gladiator07)")
-    st.markdown(
-        "Code: [GitHub Repository](https://github.com/Gladiator07/Text-to-image-synthesis-with-AttnGAN)"
-    )
-    st.markdown("---")
+    #st.markdown("---")
+    #st.markdown("---")
 
-    st.subheader("Enter the description of the bird in the text box you like !!!")
+    st.subheader("Enter the description of the bird")
     st.write(
-        "**Example**: A yellow bird with red crown, black short beak and long tail"
+        "**Example**: A blue bird with red beak and long tail"
     )
-    st.markdown("**PS**: The synthesized birds might not even exist on earth 😬 😮 😱")
     st.markdown("#")
 
     user_input = st.text_input("Write the bird description below")
